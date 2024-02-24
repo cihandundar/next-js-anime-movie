@@ -1,0 +1,25 @@
+.nav {
+  background-color: #31343b;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-block: 30px;
+}
+
+.list {
+  display: flex;
+}
+
+.link {
+  margin-right: 40px;
+}
+
+.link > a {
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.link > a:hover {
+  color: #cae962;
+}

@@ -1,0 +1,48 @@
+.container {
+  background-image: url(../../../public/zoro-bg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.input {
+  margin-top: 30px;
+}
+
+.input > input {
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  padding-left: 30px;
+  outline: none;
+}
+
+.input > button {
+  background-color: #cae962;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+}
