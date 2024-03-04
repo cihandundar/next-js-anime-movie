@@ -46,3 +46,27 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .input > input {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .input > input {
+    width: 250px;
+  }
+}

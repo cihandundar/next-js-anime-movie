@@ -73,3 +73,9 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .searchContainer input {
+    width: 250px;
+  }
+}
