@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./movies.module.css";
+import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 const Movies = () => {
   const [originalAnimes, setOriginalAnimes] = useState([]);
@@ -40,6 +41,8 @@ const Movies = () => {
     }
   };
 
+  console.log(animes);
+
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -62,15 +65,17 @@ const Movies = () => {
         <ul>
           {animes.map((anime) => (
             <li key={anime.id}>
-              {anime.image?.preview && (
-                <img
-                  src={`https://shikimori.one${anime.image.preview}`}
-                  alt={anime.name}
-                  width={200}
-                  height={250}
-                />
-              )}
-              <h4>{anime.name}</h4>
+              <Link href={`/movies/${anime.id}`}>
+                {anime.image?.preview && (
+                  <img
+                    src={`https://shikimori.one${anime.image.preview}`}
+                    alt={anime.name}
+                    width={200}
+                    height={250}
+                  />
+                )}
+                <h4>{anime.name}</h4>
+              </Link>
             </li>
           ))}
         </ul>
