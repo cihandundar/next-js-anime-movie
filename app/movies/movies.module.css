@@ -67,3 +67,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 540px) {
+  .container > ul {
+    justify-content: center;
+  }
+}
